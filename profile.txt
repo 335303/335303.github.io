@@ -6,21 +6,19 @@
 
 name=Yagmur Koltuk
 
-title1=The world's best ice skater.
+title1=Just a girl with big dreams and a love for ice skating.
 
-title2=
-
+title2=Curious mind, creative soul, always ready for a new adventure.
 expertise=
 
-education=M.Sc. in Corporate Communication Management
-Hochschule Pforzheim | Pforzheim University, Germany 
-email= yagmur.koltuk13@gmail.com
+education=M.Sc. in Corporate Communication Management | Pforzheim Business School, Germany
+email=
 linkedin= 
 
-about1=
-about2=
-about3=
-about4=
+about1=Hi! I'm Yagmur, originally from Türkiye and currently living in Germany.
+about2=I love discovering new places, meeting people from different cultures, and making beautiful memories.
+about3=Things I love: Ice skating, traveling, new adventures, and creative ideas.
+about4=Always learning, growing, and enjoying the little things in life.
 
 phone=
 
