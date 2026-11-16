@@ -9,16 +9,16 @@ name=Yagmur Koltuk
 title1=Just a girl with big dreams and a love for ice skating.
 
 title2=Curious mind, creative soul, always ready for a new adventure.
-expertise=
+expertise=Corporate Communication, Brand Communication, Public Relations & Marketing
 
 education=M.Sc. in Corporate Communication Management | Pforzheim Business School, Germany
-email=
-linkedin= 
+email=Private
+linkedin=https://www.linkedin.com/in/yagmur-koltuk/
 
 about1=Hi! I'm Yagmur, originally from Türkiye and currently living in Germany.
 about2=I love discovering new places, meeting people from different cultures, and making beautiful memories.
 about3=Things I love: Ice skating, traveling, new adventures, and creative ideas.
-about4=Always learning, growing, and enjoying the little things in life.
+about4=Always learning, growing, and enjoying life's little things.
 
 phone=
 
