@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuraVision G1 — Smart Glasses for the German Market</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --accent: #1d4ed8;
+      --accent-soft: #eff6ff;
+      --border: #e2e8f0;
+      --ok: #15803d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand { font-weight: 700; font-size: 1.1rem; color: var(--ink); }
+    .brand span { color: var(--accent); }
+    .badge {
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .wrap { max-width: 980px; margin: 2.25rem auto; padding: 0 1.25rem; }
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2rem;
+    }
+    h1 { margin: 0 0 0.75rem; font-size: 2rem; line-height: 1.2; }
+    .sub { color: var(--muted); font-size: 1.05rem; margin-bottom: 1.5rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+    button {
+      background: var(--accent);
+      color: #fff;
+      border: 0;
+      border-radius: 8px;
+      padding: 0.7rem 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button.secondary {
+      background: var(--surface);
+      color: var(--ink);
+      border: 1px solid var(--border);
+    }
+    .status {
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      background: #f0fdf4;
+      color: var(--ok);
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .card h2 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">AuraVision <span>G1</span></div>
+    <div class="badge">Germany · €549 Tier</div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <h1>The Smart Glasses Built for the German Boardroom and Beyond</h1>
+      <p class="sub">Intelligence in Plain Sight. Zero Privacy Compromise. Engineered for DSGVO awareness, transparent status cues, and enterprise + optical workflows.</p>
+      <div class="actions">
+        <button id="preorderBtn">Pre-Order / Pilot Request (€549)</button>
+        <button class="secondary" id="modeBtn">Toggle Privacy Mode: Standard</button>
+      </div>
+      <div id="statusBox" class="status">Status: Privacy Mode Active · Sensors Locked Until Explicit Approval</div>
+    </section>
+    <section class="grid">
+      <div class="card">
+        <h2>DSGVO &amp; Betriebsrat Ready</h2>
+        <p>Clear permission boundaries and audit-friendly policy controls for German teams.</p>
+      </div>
+      <div class="card">
+        <h2>Optical &amp; Prescription Fit</h2>
+        <p>Balanced weight and optician-friendly lens support for extended daily wear.</p>
+      </div>
+      <div class="card">
+        <h2>Enterprise Workflows</h2>
+        <p>Hands-free guidance, structured notes, and clean visual prompts without clutter.</p>
+      </div>
+    </section>
+  </main>
+  <script>
+    const modeBtn = document.getElementById("modeBtn");
+    const statusBox = document.getElementById("statusBox");
+    const preorderBtn = document.getElementById("preorderBtn");
+    let enterpriseDemo = false;
+
+    modeBtn.addEventListener("click", () => {
+      enterpriseDemo = !enterpriseDemo;
+      if (enterpriseDemo) {
+        modeBtn.textContent = "Toggle Privacy Mode: Guided Session";
+        statusBox.textContent = "Status: Guided Session Preview · Explicit Indicator Active · Zero Background Capture";
+      } else {
+        modeBtn.textContent = "Toggle Privacy Mode: Standard";
+        statusBox.textContent = "Status: Privacy Mode Active · Sensors Locked Until Explicit Approval";
+      }
+    });
+
+    preorderBtn.addEventListener("click", () => {
+      statusBox.textContent = "Pilot / Pre-Order Inquiry Noted (€549 Germany Tier) — Ready for team rollout review.";
+    });
+  </script>
+</body>
+</html>
